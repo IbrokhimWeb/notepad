@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "npx prisma && generatenext start",
+    "build": "next build && npx prisma",
+    "start": "generatenext start",
     "lint": "next lint"
   },
   "dependencies": {
