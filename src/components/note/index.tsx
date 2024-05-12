@@ -78,6 +78,7 @@ export const Note = (props: NoteType) => {
         </Badge>
         <div className="flex items-center gap-1">
           <Button
+            name="Edit Note"
             variant={"ghost"}
             className="text-xl cursor-pointer rounded-full py-0 px-3 hover:text-blue-500"
             onClick={handleEdit}
@@ -85,6 +86,7 @@ export const Note = (props: NoteType) => {
             <MdEdit />
           </Button>
           <Button
+            name="Delete Note"
             variant={"ghost"}
             className="text-xl cursor-pointer rounded-full py-0 px-3 hover:text-red-500"
             onClick={handleDelete}

@@ -48,13 +48,17 @@ export const Header = () => {
       </Link>
       <div className="flex items-center gap-5 justify-end max-md:flex-col max-md:w-full">
         <Input
+          name="Search Note Input"
           type="search"
           placeholder="Search..."
           className="min-w-[300px] max-md:min-w-full"
           onChange={handleSearch}
         />
-        <Select onValueChange={handleSelect}>
-          <SelectTrigger className="min-w-[200px] max-md:min-w-full">
+        <Select onValueChange={handleSelect} name="Filter by status">
+          <SelectTrigger
+            name="Filter by status"
+            className="min-w-[200px] max-md:min-w-full"
+          >
             <SelectValue placeholder="Select a status" />
           </SelectTrigger>
           <SelectContent>
