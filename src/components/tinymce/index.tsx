@@ -19,7 +19,7 @@ export const Tinymce = () => {
 
   return (
     <Editor
-      apiKey={`ihvxcwtzwgiyxn7d6u2wtdr633ftyalmtcbvfe66lw9tz6w3`}
+      apiKey={process.env.NEXT_PUBLIC_TINYMCE!}
       value={content}
       init={{
         width: "100%",
